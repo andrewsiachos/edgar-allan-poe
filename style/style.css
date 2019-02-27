@@ -1,0 +1,158 @@
+@font-face{
+    font-family:Alice;
+    src:url("fonts/Alice_in_Wonderland_3.ttf");
+}
+@font-face{
+    font-family: medieval;
+    src:url("fonts/medieval.ttf");
+}
+
+body{
+    background-image:url("raven.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container{
+    width:100%;
+    height:100%;
+    display:none;
+}
+#menu{
+    display:flex;
+    justify-content: space-between;
+    height:55px;
+    display: none;
+
+}
+#info{
+    color:silver;
+    text-align: center;
+    display:none;
+}
+.infoLink{
+    color:white;
+    text-decoration: none;
+}
+.infoLink:visited{
+    color:white;
+}
+.infoLink:hover{
+    color:silver;
+    text-decoration: underline;
+}
+
+#ravenAudio{
+    text-align: center;
+    margin-left:20px;
+    color:silver;
+}
+#stopButton:hover{
+    cursor: pointer;
+}
+#stopButton:active{
+    position: relative;
+    top:2px;
+    left:2px;
+}
+#languages{
+    padding-top:17px;
+    margin-right:15px;
+    color: silver;
+    padding:10px;
+}
+#languages:hover{
+    cursor: pointer;
+}
+#languages > ul{
+    background-color:rgba(248,236,194, 0.5);
+    border-radius: 0px 0px 10px 10px;
+    display:none;
+}
+#languages > ul > li{
+    padding:10px;
+    list-style-type: none;
+}
+#langList{
+    color:white;
+}
+#langList > li:hover{
+    color:silver;
+}
+#raven{
+  height:100%;
+  width:100%;
+  margin:auto;
+  text-align: center;
+  background-color:rgba(248,236,194, 0.5);
+  overflow:auto;
+
+}
+#theFrame{
+    width:550px;
+    margin:auto;
+    height:1100px;
+    border:30px solid transparent;
+    border-image: url("fram3.png") 70 round;
+}
+#title{
+    font:normal 45px medieval;
+}
+#text{
+    margin:5px;
+    font:normal 25px Alice;
+}
+#poeSignature{
+    width:100%;
+}
+#poster{
+    border:1px solid white;
+    border-radius: 10px;
+    width:563px;
+    height:870px;
+    background-image: url("../images/edgar.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin:25px auto;
+    display:none;
+}
+#poster:hover{
+    cursor: pointer;
+}
+#poster > h3{
+    text-align: center;
+    font-family: Alice;
+    font-size:35px;
+}
+#poster > h4{
+    text-align:right;
+    width:90%;
+    margin:auto;
+    font-family: Alice;
+    font-size:25px;
+}
+
+@media(max-width:768px){
+    body{
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    #theFrame{
+        width:75%;
+    }
+    #menu{
+        flex-direction: column;
+        height:auto;
+    }
+    #languages{
+        text-align: center;
+    }
+    #languages > ul{
+        display:block;
+    }
+    #poster{
+        width:100%;
+        height:600px;
+        background-size:cover;
+    }
+}
