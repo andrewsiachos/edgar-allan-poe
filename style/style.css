@@ -146,6 +146,7 @@ body{
     }
     #languages{
         text-align: center;
+        margin-right:0;
     }
     #languages > ul{
         display:block;
