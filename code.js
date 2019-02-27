@@ -1,4 +1,5 @@
 alert("Click on Poe's image to view the poem. Enjoy!!");
+$("#audio")[0].play();
 $("#poster").delay(500).fadeIn();
 
 $("#poster").on("click", function(){
