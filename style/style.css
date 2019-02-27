@@ -1,10 +1,10 @@
 @font-face{
     font-family:Alice;
-    src:url("fonts/Alice_in_Wonderland_3.ttf");
+    src:url("Alice_in_Wonderland_3.ttf");
 }
 @font-face{
     font-family: medieval;
-    src:url("fonts/medieval.ttf");
+    src:url("medieval.ttf");
 }
 
 body{
